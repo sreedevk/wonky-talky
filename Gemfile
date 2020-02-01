@@ -13,7 +13,7 @@ group :development, :test do
   gem 'capistrano-sidekiq'
   gem 'capistrano-rails'
   gem 'capistrano-rvm'
-  gem 'capistrano-passenger'
+  gem 'capistrano-puma'
   gem 'capistrano-bundler'
 end
 
