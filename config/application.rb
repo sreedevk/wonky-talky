@@ -22,9 +22,8 @@ Bundler.require(*Rails.groups)
 module WonkyTalkyBackend
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 6.0
-    # config.hosts << "707cccd7.ap.ngrok.io"
     config.hosts << "api.wt.sree.dev"
+    config.load_defaults 6.0
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'
